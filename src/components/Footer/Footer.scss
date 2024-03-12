@@ -1,0 +1,13 @@
+@import "../../utils/colors.scss";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: $bg-color-dark;
+  
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 20px;
+}

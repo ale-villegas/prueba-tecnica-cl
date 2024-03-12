@@ -1,0 +1,44 @@
+@import "../../utils/colors.scss";
+
+
+
+
+.box-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: center;  
+    margin-top: 15px; 
+    padding-top: 100px;
+} 
+
+.posts-create{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+} 
+
+
+.btn-add{
+    cursor: pointer;
+    color: #e31c7b;
+    transition: color 0.5s ease
+}
+
+
+.btn-add:hover{
+    color: white;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+}

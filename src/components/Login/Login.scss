@@ -1,0 +1,76 @@
+@import "../../utils/colors.scss";
+
+.log-form {
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    background-color: $bg-color-dark; 
+    margin: 100px auto; 
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+   right: 10%;
+   top: -400px;
+   box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 15px;
+   transition: all 0.3s ease;
+    ;
+
+
+    .box-inputs{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        
+    
+
+        input {
+            width: 280px;
+            height: 30px;
+            padding: 5px;
+            border: none;
+            font-weight: bold;
+            background-color: rgb(234, 234, 234);
+            color: black;
+            border-radius: 5px;
+            border: solid 1px #e31c7b;
+
+
+            
+        } 
+
+       
+     
+    } 
+
+
+
+span{
+    font-size: 1.1rem;
+    color: #e31c7b
+    ;
+}
+
+} 
+
+
+.display-login{
+    top: -24px;
+    border: solid 1px white;
+
+} 
+
+
+@media only screen and (max-width: 768px) {
+    .log-form{
+        width: 100%;
+        right: 0%;
+
+     
+    }
+}

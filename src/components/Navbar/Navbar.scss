@@ -1,0 +1,129 @@
+@import "../../utils/colors.scss";
+
+.nav-bar {
+  position: absolute;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    background-color: $bg-color-dark; 
+    margin-bottom: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 15px;
+    z-index: 1;
+    
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .logo {
+    color: #e31c7b;;
+  }
+  
+  .search-box {
+    display: flex;
+ 
+  
+  select {
+    height: 35px;
+    border: solid 1px $border-color;
+    background-color: rgb(234, 234, 234);;
+    color: black;
+    width: 100px;
+    padding: 0 5px;
+    border-radius: 5px 0 0 5px;
+   
+
+    
+  } 
+  
+  input {
+    width: 270px;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    border: solid 1px $border-color;
+    background-color: rgb(234, 234, 234);;
+    color: black;
+    border-radius: 0 5px 5px 0;
+  }  
+
+  select,input:focus {
+    outline: none;
+  } 
+
+
+
+
+
+
+}
+ 
+
+
+  
+
+  .box-back {
+    width: 80%;
+    
+    margin: 0 auto;
+  }
+
+  .arrow-back{
+    cursor: pointer;
+
+    
+  }
+
+  .arrow-back:hover{
+    color: white;
+    scale: 1.1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-bar {
+      height: 100px;
+    } 
+
+    .box-back {
+      width: 95%;
+    }
+  
+    nav {
+      display: grid;
+      grid-template-areas:
+        "logo  logout"
+        "search search";
+      width: 90%; 
+      grid-template-columns: 90% 10%;
+
+      .btn-style {
+        width: 50px;
+      }
+    
+    }
+
+  
+    .logo {
+      grid-area: logo;
+    } 
+  
+    .log-out {
+      grid-area: logout;
+    } 
+  
+    .search-box {
+      grid-area: search; 
+  
+      input {
+        width: 100%;
+      }
+    }
+  } 
+
+ 

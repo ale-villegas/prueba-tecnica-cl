@@ -1,0 +1,143 @@
+@import "../../utils/colors.scss";
+
+.box-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%; 
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 2px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 3px;
+    color: black;
+  }
+  
+  .content-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 25px;
+    text-align: justify;
+    
+  }
+  
+  .box-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+  }
+  
+  .update-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .btn-style {
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #e31c7b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 60px;
+    transition: background-color 0.5s ease
+    
+ 
+  
+  }  
+
+  .btn-user{
+  display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+   height: 50px;
+   width: 50px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    background-color: #e31c7b;
+
+    
+    
+  }
+
+
+  .more-details{
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+     
+  .btn-style:hover{
+    background-color: white ; 
+    color: #e31c7b;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+   } 
+
+ 
+
+
+.form-edit {
+  border: solid 1px $border-color;
+  
+  input {
+    height: 35px;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: solid 1px $border-color;
+    background-color: rgb(234, 234, 234);
+    color: black;
+  }  
+
+  textarea {
+    padding: 5px;
+    height: 90px;
+    resize: none;
+    border-radius: 3px;
+    border: solid 1px $border-color;
+    background-color: rgb(234, 234, 234);
+    color: black
+  }
+} 
+
+
+  
+  @media only screen and (max-width: 768px) { 
+
+    .content-box {
+      width: 100%;
+    }
+    .box-post {
+      flex-direction: column;
+    }
+  
+    .update-btn {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    } 
+  
+    .btn-style {
+      width: 45%;
+    }
+  }
